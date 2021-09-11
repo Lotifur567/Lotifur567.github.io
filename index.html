@@ -2,10 +2,101 @@
 <html lang="en">
     <head>
         <title>
-            My site!
+            Lotifur's website
         </title>
+        <style>
+            *{
+    font-family: century;
+    padding: 0;
+    margin: 0;
+}
+body #bg{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(75, 219, 255) ;
+    clip-path: polygon(0 0, 100% 0, 100% 26%, 0 63%);
+    position: absolute;
+    z-index: -1;
+}
+body #second{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(190, 233, 247);
+    clip-path: polygon(100% 1%, 100% 64%, 0 100%, 0 24%);
+    position: absolute;
+    z-index: -1;
+
+}
+body #third{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(94, 154, 233);
+    clip-path: polygon(100% 56%, 100% 100%, 0 100%, 0 73%);
+    position: absolute;
+    z-index: -1;
+}
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px; ;
+}
+ ul li a{ 
+    text-decoration: none;
+    color:black;
+    padding: 5px 20px;
+border:1px solid lightgoldenrodyellow;
+transition: 0.6s ease;
+}
+.main ul li{
+    display: inline-block;
+}
+ul li a:hover {
+    background-color: coral;
+    color: lightseagreen;
+
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    color: brown;
+    text-align: center;
+}
+.text{
+    color: rgb(5, 0, 26);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+#link{
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+        </style>
     </head>
     <body>
-        <h1>This is my github pages website</h1>
+        <header>
+            <div id="bg"> </div>
+            <div id="second"></div>
+            <div id="third"></div>
+            <div class="main">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Description</a></li>
+                </ul>
+                <div class="title">
+                    <h1>Welcome to my site!</h1>
+                </div>
+          </div>
+          <div class="text"><h2>My name is Lotifur. I am a student web developer. I make many websites in affordable price.
+               So if you want to hire me, click the link down below.</h2></div>
+          <div id="link"><h2>
+         <a href="https://www.fiverr.com/lotifur_567/make-simple-web-pages-using-html-and-css?context_referrer=search_gigs&source=top-bar&ref_ctx_id=d6e6f3e330cf0f50aa8d146ea16fbe70&pckg_id=1&pos=1&context_type=auto&funnel=d528210dd4af2ec89c0e29f0d6150e6a&seller_online=true">Link</a></h2></div>
+        </header>
     </body>
 </html>
