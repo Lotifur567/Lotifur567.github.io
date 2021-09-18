@@ -8,9 +8,8 @@
             *{
     font-family: century;
     padding: 0;
-    margin: 0;
-}
-body #bg{
+    margin: 0;}
+    body #bg{
     height: 100%;
     width: 100%;
     background-color:rgb(75, 219, 255) ;
@@ -46,6 +45,7 @@ body #third{
     padding: 5px 20px;
 border:1px solid lightgoldenrodyellow;
 transition: 0.6s ease;
+white-space: nowrap;
 }
 .main ul li{
     display: inline-block;
@@ -58,24 +58,48 @@ ul li a:hover {
 .main{
     max-width: 1200px;
     margin: auto;
-}
+} 
 .title{
     color: brown;
     text-align: center;
+    font-size: 30px;
+    white-space: nowrap;
 }
 .text{
     color: rgb(5, 0, 26);
     position: absolute;
-    top:50%;
+    top:30%;
     left:50%;
     transform:translate(-50%,-50%);
 }
 #link{
     position: absolute;
-    top:70%;
+    top:50%;
     left:50%;
     transform:translate(-50%,-50%);
 }
+@media(min-width: 751px){
+    .title{
+        font-size: 30px;
+    }
+}
+@media(max-width: 750px){
+    .title{
+        font-size: 15px;
+    }
+}
+@media(min-width: 751px){
+    .text{
+        font-size: 20px;
+    }
+}
+@media(max-width: 750px){
+    .text{
+        font-size: 15px;
+    }
+}
+
+
 
         </style>
     </head>
